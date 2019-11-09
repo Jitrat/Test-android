@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:padding="16dp"
+              android:orientation="horizontal">
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/durian"
+            android:id="@+id/fruitImage"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="80dp"
+                  android:orientation="vertical">
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameText"
+                android:textSize="20sp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_margin="8dp"
+                android:textStyle="bold"
+                android:textColor="#000" android:text="@string/fruitname"/>
+
+        <TextView
+                android:text="@string/fruitdescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/descriptionText"
+                android:textSize="18sp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:layout_margin="8dp"
+                android:textColor="#a9a9a9"/>
+
+    </LinearLayout>
+
+</LinearLayout>

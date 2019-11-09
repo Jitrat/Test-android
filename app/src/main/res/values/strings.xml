@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hello</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title">Title</string>
+    <string name="about">About</string>
+    <string name="fruitname">Fruit Name</string>
+    <string name="fruitdescription">Fruit Description</string>
+
+</resources>

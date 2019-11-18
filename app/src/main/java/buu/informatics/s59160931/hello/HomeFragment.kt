@@ -32,7 +32,7 @@ class HomeFragment : Fragment() {
             R.layout.fragment_home, container, false)
         binding.apply {
             clickImage.setOnClickListener { view ->
-                view.findNavController().navigate(HomeFragmentDirections.actionHomeFragmentToFruitFragment())
+                view.findNavController().navigate(R.id.action_homeFragment_to_fruitFragment)
             }
         }
         return binding.root

@@ -28,7 +28,7 @@ class FruitFragment : Fragment() {
 
     private lateinit var binding: FragmentFruitBinding
 
-
+    var number = 0
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -51,7 +51,34 @@ class FruitFragment : Fragment() {
 
         binding.listView.adapter = this.context?.let { CustomAdapterFruit(it, arrFruit) }
 
+        binding.listView.setOnItemClickListener { parent: AdapterView<*>, view: View, position: Int, id: Long ->
+            if(position == 0){
+                number = 0
+            }
+            if (position == 1){
+                number = 1
+            }
+            if (position == 2){
+                number = 2
+            }
+            if (position == 3){
+                number = 3
+            }
+            if (position == 4){
+                number = 4
+            }
+            if (position == 5){
+                number = 5
+            }
+            if (position == 6){
+                number = 6
+            }
 
+            when(position){
+               in 0..6 -> findNavController().navigate(FruitFragmentDirections.actionFruitFragmentToDetailFragment(number))
+            }
+
+        }
         return binding.root
     }
 }
